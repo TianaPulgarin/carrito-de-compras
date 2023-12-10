@@ -1,6 +1,6 @@
 
 import './card.css'
-import { IMAGE_CATEGORIES } from "../config/list"
+import { IMAGE_CATEGORIES } from '../config/list';
 
 
 const Card = ({ category, onCategoryClick, product, onProductClick, title, price, description, img}) => {
@@ -14,7 +14,7 @@ const Card = ({ category, onCategoryClick, product, onProductClick, title, price
         }
     };
 return (
-    <div className="container" onClick={handleClick}>
+    <div className="container-card" onClick={handleClick}>
             <div className="card">
                 {isProduct ? (
                     <>

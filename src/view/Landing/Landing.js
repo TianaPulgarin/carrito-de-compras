@@ -4,7 +4,7 @@ import useFetch from '../../component/hooks/useFetch';
 import { BASE_URL_CATEGORIES } from '../../component/config/list';
 import { useNavigate } from "react-router-dom";
 
-const Layout = ({onCategorySelect }) => {
+const Landing = ({onCategorySelect }) => {
   const navigate = useNavigate();
   const { data: categories, loading, error } = useFetch(BASE_URL_CATEGORIES);
 
@@ -17,12 +17,12 @@ console.log(categories, 'categorias')
   
 return (
 <div className="principal-container">
-    {categories.map((category, index) => (
-      <Card key={index} category={category} onCategoryClick={() => handleCategoryClick(category)} />
+    {categories.map((category, index,img) => (
+      <Card key={index} img ={img} category={category} onCategoryClick={() => handleCategoryClick(category)} />
     ))}
   </div>
   );
 }
 
 
-export default Layout
+export default Landing

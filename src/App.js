@@ -9,12 +9,15 @@ function App() {
   return (
     <Router>
       <Header/>
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/compra/:categoryName" element={<Shopping />} />
-      </Routes>
+      <div className='container'>
+        <Routes>
+          <Route path="/landing" element={<Landing />} />
+          <Route path="/compra/:categoryName" element={<Shopping />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
+
 
 export default App;
