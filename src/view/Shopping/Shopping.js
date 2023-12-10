@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import useFetch from "../../hooks/useFetch";
-import { BASE_URL_CATEGORIES_SELECTED } from "../config/list";
-import Card from '../Card/card';
-import './layoutCompra.css'
+import useFetch from '../../component/hooks/useFetch';
+import { BASE_URL_CATEGORIES_SELECTED } from '../../component/config/list';
+import Card from '../../component/Card/Card';
+import './shopping.css'
 
 const LayoutCompra = () => {
   const { categoryName } = useParams();
