@@ -11,7 +11,7 @@ function Header() {
                         className="img-logo"
                         src={Logo} alt="Logo" />
                 </div>
-                <p className="titulo-header"><Link to="/landing">Tienda</Link></p>
+                <p className="titulo-header"><Link to="/">Inicio</Link></p>
                 <p className="titulo-header"><Link to="/shopping">Carrito de compras</Link></p>
 
             </div>

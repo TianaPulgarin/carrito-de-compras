@@ -28,7 +28,6 @@ const LayoutCompra = () => {
           description={product.description}
           category={product.category}
           img= {product.image}
-          // Aquí puedes pasar más props si lo necesitas
         />
       ))}
     </div>
