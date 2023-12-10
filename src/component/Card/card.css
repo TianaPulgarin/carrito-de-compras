@@ -1,6 +1,8 @@
 
 .container-card{
     display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
     
@@ -20,4 +22,7 @@
   object-fit: cover;
   height: 50%;
   display: flex;
+}
+.category-title{
+  text-align: center;
 }
