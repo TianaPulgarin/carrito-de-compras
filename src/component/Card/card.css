@@ -1,0 +1,32 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+.container{
+    display: flex;
+    justify-content: space-between;
+   justify-items: center;
+    flex-basis: 25%; /* Cada tarjeta ocupa el 25% del contenedor padre */
+    max-width: 25%; /* Asegura que la tarjeta no sea más grande que el 25% */
+    box-sizing: border-box;
+    align-items: center;
+    background-color: bisque;
+}
+    
+.card {
+  background-color: hsl(257.42deg 65.96% 81.57%);
+  padding: 10px;
+ border-radius: 5px;
+}
+.category-title{
+  
+  font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.imagen{
+  width: 100%;
+  object-fit: cover;
+  height: 50%;
+  display: flex;
+}
