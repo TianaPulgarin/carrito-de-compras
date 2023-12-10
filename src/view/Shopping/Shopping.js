@@ -5,7 +5,7 @@ import { BASE_URL_CATEGORIES_SELECTED } from '../../component/config/list';
 import Card from '../../component/Card/Card';
 import './shopping.css'
 
-const LayoutCompra = () => {
+const Shopping = () => {
   const { categoryName } = useParams();
   const { data: products, loading, error } = useFetch(`${BASE_URL_CATEGORIES_SELECTED}${categoryName}`);
 
@@ -34,4 +34,4 @@ const LayoutCompra = () => {
   );
 }
 
-export default LayoutCompra;
+export default Shopping;
