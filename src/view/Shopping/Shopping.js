@@ -34,6 +34,9 @@ const Shopping = () => {
           <Cart onAddToCart={handleAddToCart} product={product} />
         </div>
       ))}
+      <div className='table'>
+        
+      </div>
     </div>
   );
 }
