@@ -1,11 +1,10 @@
-
-import './cart.css';
-
 import React, { useState } from 'react';
-
+import Modal from '../Modal/Modal';
+import './cart.css';
 
 const Cart = ({ product }) => {
   const [cartItems, setCartItems] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleAddToCart = (productToAdd) => {
     setCartItems(prevItems => {
@@ -17,6 +16,11 @@ const Cart = ({ product }) => {
       }
       return [...prevItems, { ...productToAdd, quantity: 1 }];
     });
+    setIsModalOpen(true); // Esto abrirá el modal inmediatamente
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -24,17 +28,14 @@ const Cart = ({ product }) => {
       <button className='buy-button' onClick={() => handleAddToCart(product)}>
         ADD TO CART
       </button>
-      <div className="cart-container">
-        <h3>Carrito</h3>
-        {cartItems.map(item => (
-          <div key={item.id} className="cart-item">
-            <p>{item.title} - Cantidad: {item.quantity}</p>
-          </div>
-        ))}
-      </div>
-    </div>  
+
+      <Modal
+        open={isModalOpen} // Asegúrate de que esta prop 'open' esté ligada al estado 'isModalOpen'
+        onClose={handleCloseModal}
+        cartItems={cartItems}
+      />
+    </div>
   );
 };
 
 export default Cart;
-
