@@ -17,12 +17,13 @@ return (
     <div className="container-card" onClick={handleClick}>
             <div className="card">
                 {isProduct ? (
-                    <>
+                    <> 
+                        <h3 className='title'>{title}</h3>
                         <img  className="imagen" src={img} alt={title} />
-                        <p className='title'>{title}</p>
-                        <p className='price'>{price}</p>
+                        
                         <p className='descripcion'>{description}</p>
-                        <p className='category'>{category}</p>
+                        <span className='price'>Price {price}</span>
+                        
                          
                        
                         {/* Añadir aquí más detalles del producto si es necesario */}

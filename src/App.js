@@ -4,6 +4,7 @@ import Landing from './view/Landing/Landing';
 import Shopping from './view/Shopping/Shopping';
 import Header from "./component/Header";
 import './assets/style.css';
+import './App.css'
 
 function App() {
   return (

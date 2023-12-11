@@ -1,9 +1,14 @@
 .products-container{
     display: flex;
-    padding-top: 20px;
     background-color: #EAEBFF;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
+   align-items: flex-start;
+   align-self: center;
+   padding-top: 10%;
+   gap: 10px;
+   flex-wrap: wrap; /* Esto permite que las tarjetas se muevan a la siguiente línea */
+   
+
+   
+    
 }
