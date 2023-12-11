@@ -24,7 +24,7 @@ return (
                         <p className='descripcion'>{description}</p>
                         <div className='container-button'>
                         <span className='price'>Price {price}</span>
-                        <button className='buy-button'>BUY</button>
+                       
                         </div>
                         
                          

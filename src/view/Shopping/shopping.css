@@ -1,5 +1,8 @@
 .products-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* crea dos columnas con el mismo tamaño */
+    gap: 14px; /* opcional: añade un espacio entre las columnas */
+  
     background-color: #EAEBFF;
     justify-content: center;
    align-items: flex-start;

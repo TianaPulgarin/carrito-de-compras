@@ -55,12 +55,7 @@ line-height: 24px;
   display: flex;
   gap: 10px;
 }
-.buy-button{
-  background-color: #52c458;
-  border-radius: 5px;
 
-
-}
 .buy-button:hover {
   color: #ffffff; 
   background-color: #006c17; 
