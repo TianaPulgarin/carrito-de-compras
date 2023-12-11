@@ -13,6 +13,8 @@ function Header() {
                 </div>
                 <p className="titulo-header"><Link to="/">Inicio</Link></p>
                 <p className="titulo-header"><Link to="/landing">Categorias</Link></p>
+                <p className="titulo-header"><Link to="/order">Orden</Link></p>
+
 
             </div>
         </header >

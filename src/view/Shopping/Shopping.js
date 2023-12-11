@@ -4,8 +4,7 @@ import useFetch from '../../component/hooks/useFetch';
 import { BASE_URL_CATEGORIES_SELECTED } from '../../component/config/list';
 import Card from '../../component/Card/Card';
 import './shopping.css'
-import Cart from '../../component/Cart/Cart';
-
+import ButtonCart from '../../component/Order/Cart';
 const Shopping = () => {
   const { categoryName } = useParams();
   const { data: products, loading, error } = useFetch(`${BASE_URL_CATEGORIES_SELECTED}${categoryName}`);
@@ -31,7 +30,7 @@ const Shopping = () => {
             category={product.category}
             img={product.image}
           />
-          <Cart onAddToCart={handleAddToCart} product={product} />
+          <ButtonCart onAddToCart={handleAddToCart} product={product} />
         </div>
       ))}
       <div className='table'>
