@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.png";
-
+import './header.css'
 function Header() {
     return (
         <header >
@@ -11,8 +11,10 @@ function Header() {
                         className="img-logo"
                         src={Logo} alt="Logo" />
                 </div>
-                <p className="titulo-header"><Link to="/landing">Tienda</Link></p>
-                <p className="titulo-header"><Link to="/shopping">Carrito de compras</Link></p>
+                <p className="titulo-header"><Link to="/">Inicio</Link></p>
+                <p className="titulo-header"><Link to="/landing">Categorias</Link></p>
+                <p className="titulo-header"><Link to="/order">Orden</Link></p>
+
 
             </div>
         </header >
